@@ -1,5 +1,5 @@
 /*1*/
-select title from film where description like '%astronaut%';
+select count(title) as rekomendasi from film where description like '%astronaut%';
 
 /*2*/
 SELECT count(replacement_cost) as total FROM film WHERE rating = 'R' AND replacement_cost >=5 AND replacement_cost <=15;
