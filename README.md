@@ -6,7 +6,7 @@ Following are the question provided by queries as an answer below :
 Q1 : A Customer wants to know the films about "astronaut". How many recommendations could you give for him ? 
 
 /*1*/
-SELECT title FROM film WHERE  title LIKE '%astronaut%' OR title like '%space%';
+select title from film where description like '%astronaut%';
 
 
 
