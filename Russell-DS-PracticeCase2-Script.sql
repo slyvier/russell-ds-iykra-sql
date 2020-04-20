@@ -19,7 +19,7 @@ SELECT rating,avg(replacement_cost) as avg_rep_cost FROM film GROUP BY rating;
 /*5*/
 select concat(c.first_name,' ',c.last_name),c.email,sum(p.amount) as total_sales
 from customer c join payment p on c.customer_id = p.customer_id
-group by concat(c.first_name,' ',c.last_name),c.email,p.amount order by total_sales desc limit 5;
+group by concat(c.first_name,' ',c.last_name),c.email order by total_sales desc limit 5;
 
 /*6*/
 select f.title,count(distinct (i.inventory_id))  as jumlah,i.store_id from store s
