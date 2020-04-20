@@ -1,5 +1,5 @@
 /*1*/
-SELECT title FROM film WHERE  title LIKE '%astronaut%' OR title like '%space%';
+select title from film where description like '%astronaut%';
 
 /*2*/
 SELECT count(replacement_cost) as total FROM film WHERE rating = 'R' AND replacement_cost >=5 AND replacement_cost <=15;
