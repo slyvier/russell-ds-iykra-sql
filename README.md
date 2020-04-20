@@ -41,7 +41,7 @@ Q5 : We want to send coupons to the 5 customers who have spent the most amount o
 /*5*/
 select concat(c.first_name,' ',c.last_name),c.email,sum(p.amount) as total_sales
 from customer c join payment p on c.customer_id = p.customer_id
-group by concat(c.first_name,' ',c.last_name),c.email,p.amount order by total_sales desc limit 15;
+group by concat(c.first_name,' ',c.last_name),c.email order by total_sales desc limit 15;
 
 
 
