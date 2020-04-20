@@ -6,7 +6,7 @@ Following are the question provided by queries as an answer below :
 Q1 : A Customer wants to know the films about "astronaut". How many recommendations could you give for him ? 
 
 /*1*/
-select title from film where description like '%astronaut%';
+select count(title) as rekomendasi from film where description like '%astronaut%';
 
 
 
